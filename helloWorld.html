@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+    <head> 
+        <title> My Portfolio</title>
+        <link href="style.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <header>
+            
+            <ul class="navList">
+                    <li><a class="active" href="#home"> Home </a></li>
+                    <li><a href="#blog"> Blog </a></li>
+                    <li><a href="#projects"> Projects </a></li>
+                    <li><a href="#about"> About </a></li>
+                    <li style="float: right"><a href="#contact"> Contact </a></li>
+            </ul>
+        </header>
+        <section id="home" >
+            <div id="pdp">
+                <img src="./assets/github.png" alt="avatar" width="300" height="300"> 
+            </div>
+            
+            <div id="welcome">
+                <h1>
+                    Hey! I'am Ouardia 
+                </h1>
+                
+                <h2>
+                    I'm learning web developpement
+                </h2>
+                <h3>
+                    Welcome to my first website! 
+                </h3>
+            </div>
+            <a href="https://www.linkedin.com/in/ouardia-belaidi-23a279196/" target="_blank">
+                <img src="assets/linkedin.png" alt="Visit my LinkedIn account" width="40" height="40">
+            </a>
+            <a href = "https://github.com/ouardia-belaidi" target="_blank">
+                <img src="assets/github (1).png" alt="Visit my Github account" width="40" height="40" style="padding-left: 2%">
+            </a>   
+        </section>
+        
+
+        <section id="about"> 
+            <p> About </p>  
+        
+        <div id="intro">
+            <h4> Who is Ouardia BELAIDI ? </h4>
+            <pre>
+                A computer science student, this is the first websit I work on with basic HTML,CSS
+                and JavaScript. I aim to enhance my skills in the tech field. 
+                I'm open for contribution offers and Projects. 
+                Learn more about my activities : 
+            </pre>   
+        </div>
+                                                              
+        <h5> GDG Algiers & WTM Algiers Co-organizer </h5> 
+        <pre> 
+            I had the honor to server the Google Developer Group Algiers community as a Logistics 
+            member and then a co-manager.
+            GDG Algiers and WTM Algiers are student clubs based at the Higher National School of Computer 
+            Science Algiers, and the most active chapters of the GDG program in Algeria and the MENA region. 
+            My journey with this amazing community was full of learning and doing cool things that matter,
+            and it stills. 
+            We organize diverse events and projects which gather the Tech community to learn, exchange 
+            and have fun together. 
+            <img id="picture" src="assets/0.jpg" alt="GDG Algiers" style="float: right;" width="200" height="200">
+        </pre>
+
+        
+
+        <h6> Women Tech Makers Ambassador</h6>
+        <pre> 
+            <img id="wtm" src="assets/th(26).jpg" alt="WTM Logo" style="float: left;" width="180" height="180">
+
+            I joined the Women Tech Maker Ambassador program, founded by Google, since 2021. 
+            Our role is supporting our local community, especially women,in the Tech field 
+            by leading communities,organizing events, hosting talks and mentoring.
+            Learn more about us and join our<a href =" https://developers.google.com/womentechmakers/ambassadors"> Global Community.</a> 
+            
+        </pre>
+    </section>
+    </body>
+
+    <section id = "contact">
+        <p> Contact me </p>
+        <form method="post" action="" target="_blank">
+        <input type="text" placeholder="Name">
+        <br>
+        <input type="email" placeholder="Email">
+        <br>
+        <input type="text" placeholder="Object">
+        <br>
+        <textarea type="text" id="message" rows="6" cols="47" area-placeholder="Your message"> </textarea>
+        <br>
+      <!--  <button id="btn"> Send </button>-->
+      <input type ="submit" value="Send">
+        </form>
+
+        <script> 
+            const sendBtn = document.getElementById("btn")
+            sendBtn.onclick = () => {
+                console.log("message envoyé avec succès!")
+            }
+        </script>
+    </section>
+    
+</html>
