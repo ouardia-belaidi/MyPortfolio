@@ -2,21 +2,21 @@
 <html>
 
     <head> 
-        <title> My Portfolio</title>
+        <title> Ouardia Belaidi</title>
         <link href="style.css" rel="stylesheet">
 
     </head>
 
     <body>
-        <header>
-            
+        <header class="header">
+            <a href="#defaut" class="logo">MyLogo.</a>
             <ul class="navList">
                     <li><a class="active" href="#home"> Home </a></li>
                     <li><a href="#blog"> Blog </a></li>
                     <li><a href="#projects"> Projects </a></li>
                     <li><a href="#about"> About </a></li>
                     <li style="float: right"><a href="#contact"> Contact </a></li>
-            </ul>
+            </ul> 
         </header>
         <section id="home" >
             <div id="pdp">
@@ -36,10 +36,10 @@
                 </h3>
             </div>
             <a href="https://www.linkedin.com/in/ouardia-belaidi-23a279196/" target="_blank">
-                <img src="assets/linkedin.png" alt="Visit my LinkedIn account" width="40" height="40">
+                <img src="assets/linkedin.png" alt="Visit my LinkedIn account" width="35" height="35">
             </a>
             <a href = "https://github.com/ouardia-belaidi" target="_blank">
-                <img src="assets/github (1).png" alt="Visit my Github account" width="40" height="40" style="padding-left: 2%">
+                <img src="assets/github (1).png" alt="Visit my Github account" width="35" height="35" style="padding-left: 1%">
             </a>   
         </section>
         
@@ -50,35 +50,35 @@
         <div id="intro">
             <h4> Who is Ouardia BELAIDI ? </h4>
             <pre>
-                A computer science student, this is the first websit I work on with basic HTML,CSS
-                and JavaScript. I aim to enhance my skills in the tech field. 
-                I'm open for contribution offers and Projects. 
-                Learn more about my activities : 
+                A computer science student, this is the first website I buil with basic HTML,CSS and JavaScript. I aim to enhance 
+                my skills in web developpement and the tech field in general. 
+                I'm open for intnerships and Projects. Learn more about my activities : 
             </pre>   
         </div>
                                                               
         <h5> GDG Algiers & WTM Algiers Co-organizer </h5> 
         <pre> 
-            I had the honor to server the Google Developer Group Algiers community as a Logistics 
-            member and then a co-manager.
-            GDG Algiers and WTM Algiers are student clubs based at the Higher National School of Computer 
-            Science Algiers, and the most active chapters of the GDG program in Algeria and the MENA region. 
-            My journey with this amazing community was full of learning and doing cool things that matter,
-            and it stills. 
-            We organize diverse events and projects which gather the Tech community to learn, exchange 
-            and have fun together. 
             <img id="picture" src="assets/0.jpg" alt="GDG Algiers" style="float: right;" width="200" height="200">
+            I had the honor to server the GDG Algiers community as a Logistics manager.
+            GDG Algiers and WTM Algiers are student clubs based at the Higher National School 
+            of Computer Science Algiers, and the most active chapters of the GDG program in Algeria 
+            and the MENA region. 
+            My journey with this amazing community was full of learning and doing cool things that matter,
+            and still. 
+            We organize diverse events and projects which gather the Tech community to learn, exchange 
+            and build.
+           
         </pre>
 
         
 
-        <h6> Women Tech Makers Ambassador</h6>
+        <h6> Women TechMakers Ambassador</h6>
         <pre> 
             <img id="wtm" src="assets/th(26).jpg" alt="WTM Logo" style="float: left;" width="180" height="180">
 
-            I joined the Women Tech Maker Ambassador program, founded by Google, since 2021. 
-            Our role is supporting our local community, especially women,in the Tech field 
-            by leading communities,organizing events, hosting talks and mentoring.
+            I joined the Women TechMakers Ambassador program, since 2021. 
+            Our role is supporting our local communities, especially women,in the Tech field 
+            by leading communities,organizing events, hosting talks and providing mentorship.
             Learn more about us and join our<a href =" https://developers.google.com/womentechmakers/ambassadors"> Global Community.</a> 
             
         </pre>
@@ -87,19 +87,32 @@
 
     <section id = "contact">
         <p> Contact me </p>
+        <img class="contactImage" src="./assets/message.png" alt="Contact me" width="120" height="120">
         <form method="post" action="" target="_blank">
-        <input type="text" placeholder="Name">
+        <label> Full name :</label>
         <br>
-        <input type="email" placeholder="Email">
+        <input type="text" placeholder="ex : John Smith" required>
         <br>
-        <input type="text" placeholder="Object">
+        <label> Email:</label>
+        <input type="email" placeholder="ex : aaaaa@gmail.com" required>
         <br>
-        <textarea type="text" id="message" rows="6" cols="47" area-placeholder="Your message"> </textarea>
+        <label> Subject:</label>
         <br>
-      <!--  <button id="btn"> Send </button>-->
-      <input type ="submit" value="Send">
+        <input type="text" placeholder="ex : Offer" required>
+        <br>
+        <label> Your message : :</label>
+        <br>
+        <textarea id="message" pl   aceholder="Provide details !" rows="7" cols="47" required> </textarea>
+        <br>
+        <button id="btn">Send</button>
         </form>
+        
+        <div class="footer">
+            <p class="title1"><small>Ouardia BELAIDI - 2023</small></p>
+            <p class="title1"><small>Thanks for visiting !</small></p>
 
+            
+        </div>
         <script> 
             const sendBtn = document.getElementById("btn")
             sendBtn.onclick = () => {
@@ -107,5 +120,5 @@
             }
         </script>
     </section>
-    
+    </body>
 </html>
