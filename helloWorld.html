@@ -4,7 +4,12 @@
     <head> 
         <title> Ouardia Belaidi</title>
         <link href="style.css" rel="stylesheet">
-
+        <script> 
+            const sendBtn = document.getElementById("btn")
+            sendBtn.onclick = () => {
+                alert(console.log("message envoyé avec succès!"))
+            }
+        </script>
     </head>
 
     <body>
@@ -89,7 +94,7 @@
         <p> Contact me </p>
         <img class="contactImage" src="./assets/message.png" alt="Contact me" width="120" height="120">
         <div class="formulaire"> 
-        <form method="post" action="" target="_blank">
+        <form method="post" action="">
         <label> Full name :</label>
         <br>
         <input type="text" placeholder="ex : Ouardia Belaidi" required>
@@ -111,12 +116,7 @@
         <br>
         <br>
         
-        <script> 
-            const sendBtn = document.getElementById("btn")
-            sendBtn.onclick = () => {
-                console.log("message envoyé avec succès!")
-            }
-        </script>
+    
     </section>
     <div class="footer">
             <h6> Ouardia BELAIDI </h6>
