@@ -83,8 +83,6 @@ li a{
     text-align: center;
     font-size: 23px;
     text-decoration: none;
-    
-
 }
 
 header ul li a:hover{
@@ -176,7 +174,7 @@ label{
 }
 .contactImage {
     float: right;
-    padding-right: 30%;
+    padding-right: 18%;
     position: relative;
     animation:move 2s ease-out infinite alternate;
     padding-top: 10%;
@@ -192,16 +190,11 @@ label{
 }
 
 .footer{
-    height: 150px;
+    height: 160px;
     background-color:#111111c9;
     color: aliceblue;
-    padding: 3px;
     text-align: center;
-    display: block;
-    left: 0%;
-    right:0%;
 }
-
 .title1{
     padding-top:2%;
     padding-right: 40px;

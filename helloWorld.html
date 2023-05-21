@@ -50,7 +50,7 @@
         <div id="intro">
             <h4> Who is Ouardia BELAIDI ? </h4>
             <pre>
-                A computer science student, this is the first website I buil with basic HTML,CSS and JavaScript. I aim to enhance 
+                A computer science student, this is the first website I build with basic HTML,CSS and JavaScript. I aim to enhance 
                 my skills in web developpement and the tech field in general. 
                 I'm open for intnerships and Projects. Learn more about my activities : 
             </pre>   
@@ -88,13 +88,14 @@
     <section id = "contact">
         <p> Contact me </p>
         <img class="contactImage" src="./assets/message.png" alt="Contact me" width="120" height="120">
+        <div class="formulaire"> 
         <form method="post" action="" target="_blank">
         <label> Full name :</label>
         <br>
-        <input type="text" placeholder="ex : John Smith" required>
+        <input type="text" placeholder="ex : Ouardia Belaidi" required>
         <br>
         <label> Email:</label>
-        <input type="email" placeholder="ex : aaaaa@gmail.com" required>
+        <input type="email" placeholder="ex :you@gmail.com" required>
         <br>
         <label> Subject:</label>
         <br>
@@ -102,17 +103,14 @@
         <br>
         <label> Your message : :</label>
         <br>
-        <textarea id="message" pl   aceholder="Provide details !" rows="7" cols="47" required> </textarea>
+        <textarea id="message" placeholder="Provide details !" rows="7" cols="47" required> </textarea>
         <br>
         <button id="btn">Send</button>
-        </form>
-        
-        <div class="footer">
-            <p class="title1"><small>Ouardia BELAIDI - 2023</small></p>
-            <p class="title1"><small>Thanks for visiting !</small></p>
-
-            
         </div>
+        </form>     
+        <br>
+        <br>
+        
         <script> 
             const sendBtn = document.getElementById("btn")
             sendBtn.onclick = () => {
@@ -120,5 +118,10 @@
             }
         </script>
     </section>
+    <div class="footer">
+            <h6> Ouardia BELAIDI </h6>
+            <small>Thanks for visiting!</small> 
+
+    </div>
     </body>
 </html>
