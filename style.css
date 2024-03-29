@@ -1,35 +1,40 @@
 body{
   /*  background-image: url("/home/ouardia/Downloads/modern-white-background.jpg");*/
+    background-color: white;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    color: black;
-    margin-left: 10%;
-    margin-right: 10%;
+    color: #000000;
+   /* margin-left: 10%;
+    margin-right: 10%;*/
 }
 
 header{
     position:absolute;
-    width:100%;
+    width:80%;
     top: 0%;
-    margin-left: 0%;
-    margin-right: 0%;
-    z-index: 1000;
-    display:inline-block;
-    align-items:center;
-    justify-content: space-between;
+    margin-top: 2%;
+    z-index: 1000;   
+    display:block;
+    align-items: center;   
+    justify-content:space-between;
     background: transparent;
-    padding: 30px;
+    overflow: hidden;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
-#home{
-    margin-left: 5%;
-    padding-top: 23%;
+#home{  
+    padding-top: 18%;
     align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+
 }
 #about{
-    padding-top:10%;
-    margin-left: 5%;
+    padding-top:8%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 p{
     text-align: center;
@@ -63,31 +68,37 @@ h3{
     list-style-type: none;
     overflow: hidden;
     font-size: 100%;
-    /*color: black;*/
-    background-color: #333;
-    margin-right: 20%;
+    color: #111111c9;
+    /*background-color: #333;*/
+    margin-right: 0%;
 }
 li{
     float: left;
-    border-right: 1px solid #bbb; 
+    border-right: none;
+    padding-left: 10%;
 }
 li a{
-    display: block;
-    color: whitesmoke;
+    float: none;
+    color:#111111c9;
     text-align: center;
-    padding: 14px;
-    font-size: 20px;
+    font-size: 23px;
+    text-decoration: none;
+}
 
- }
+header ul li a:hover{
+    border-radius: 4px;
+    background-color:darkgray;
+}
+
 li:last-child{
     border-right:none;
 
 }
-#picture{
+/*#picture{
     margin-left: 2%;
     padding-left: 2%;
-    padding-top: 1.5%;
-}
+    padding-top: 0%;
+}*/
 h4,h5,h6{
     padding-top: 40px;
     font-size: 20px;
@@ -97,39 +108,95 @@ h4,h5,h6{
 
 pre{
     font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size: 17px;
+    font-size: 18px;
 }
 
 #wtm{
-    text-align: left;
-    padding-bottom: 1%;
+    padding-right: 5%;
+    padding-left: 5%;
 }
 
 input{
     padding: 5px;
     inline-size: 10%;
-    width: 40%;
+    border-radius: 16px;
+    width: 38%;
     display:block;
+    border-color: #111;
 }
-
+textarea{
+    border-radius: 16px;
+    border-color: #111;
+}
 #msg{
     height: 10vw;
     padding: 30px;
 }
 #btn{
     padding: 8px;
-    border-radius: 4px;
-    background-color: white;
+    border-radius: 16px;
+    background-color: gray;
     color :#111;
+    font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
     width: 12%;
 }
 
-form{
-    display:block;
-    
-}
+
 #contact{
     padding-top : 10%;
-    margin-left: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+
+form{
+    display:block;
+    justify-content: center;
+    align-items: center;
+    
+}
+label{
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+
+}
+
+@keyframes move {
+    from {
+        right: 0%;
+    }
+    to{
+        right: 10%
+    }
+    
+}
+.contactImage {
+    float: right;
+    padding-right: 18%;
+    position: relative;
+    animation:move 2s ease-out infinite alternate;
+    padding-top: 10%;
+}
+
+.logo{
+    float: left;
+    font-size: 35px;
+    text-decoration: wavy;
+    font-weight: bold;
+    color: #111111c9;
+    padding-top: 0.7%;
+}
+
+.footer{
+    height: 160px;
+    background-color:#111111c9;
+    color: aliceblue;
+    text-align: center;
+}
+.title1{
+    padding-top:2%;
+    padding-right: 40px;
+    font-size: 17px;
 }
